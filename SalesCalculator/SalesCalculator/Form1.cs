@@ -24,6 +24,7 @@ namespace SalesCalculator
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
+            // check to see if the fields are empty, if they are ask for input
             if (string.IsNullOrEmpty(this.subTotalIn.Text))
             {
                 MessageBox.Show("Please Input a subtotal");
@@ -34,9 +35,17 @@ namespace SalesCalculator
             }
             else
             {
-                int subTotal = Convert.ToInt32(subTotalIn.Text);
-                int taxes = Convert.ToInt32(taxIn.Text);
-                int total = subTotal + taxes;
+                // do the calculation
+                decimal subTotal = Convert.ToDecimal(subTotalIn.Text);
+                decimal taxes = Convert.ToDecimal(taxIn.Text);
+                decimal taxCalc = subTotal * taxes / 100;
+                Console.WriteLine(taxCalc);
+                decimal total = subTotal + taxCalc;
+               
+
+                // display the results
+                subTotalBox.Text = subTotalIn.Text;
+                taxesBox.Text = taxCalc.ToString();
                 totalBox.Text = total.ToString();
             }
 

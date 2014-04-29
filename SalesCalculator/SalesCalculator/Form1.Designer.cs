@@ -68,11 +68,11 @@
             // taxLbl
             // 
             this.taxLbl.AutoSize = true;
-            this.taxLbl.Location = new System.Drawing.Point(60, 58);
+            this.taxLbl.Location = new System.Drawing.Point(49, 58);
             this.taxLbl.Name = "taxLbl";
-            this.taxLbl.Size = new System.Drawing.Size(36, 13);
+            this.taxLbl.Size = new System.Drawing.Size(47, 13);
             this.taxLbl.TabIndex = 3;
-            this.taxLbl.Text = "Taxes";
+            this.taxLbl.Text = "Taxes %";
             // 
             // totalBox
             // 
@@ -156,9 +156,9 @@
             this.taxLabel.AutoSize = true;
             this.taxLabel.Location = new System.Drawing.Point(24, 60);
             this.taxLabel.Name = "taxLabel";
-            this.taxLabel.Size = new System.Drawing.Size(39, 13);
+            this.taxLabel.Size = new System.Drawing.Size(50, 13);
             this.taxLabel.TabIndex = 1;
-            this.taxLabel.Text = "Taxes:";
+            this.taxLabel.Text = "Taxes %:";
             // 
             // PriceLbl
             // 
